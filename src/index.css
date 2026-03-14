@@ -1,0 +1,150 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root variables */
+:root {
+  --bg: #f3f4f6;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --text: #1f2937;
+  --text-light: #6b7280;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+}
+
+/* Body */
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* Layout */
+.app-wrapper {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Header */
+.site-header {
+  margin-bottom: 30px;
+}
+
+.site-header__tag {
+  font-size: 12px;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.site-header__title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.site-header__subtitle {
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+/* Card sections */
+.input-section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Label */
+.input-section__label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-light);
+  margin-bottom: 10px;
+}
+
+/* Textarea */
+.input-section__textarea {
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px;
+  font-family: monospace;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.input-section__textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* Action bar */
+.action-bar {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Button */
+.btn-analyze {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-analyze:hover {
+  background: var(--primary-hover);
+}
+
+/* Results */
+.results {
+  margin-top: 20px;
+}
+
+.results__heading {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--text-light);
+}
+
+/* Suggestion card */
+.suggestion-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 10px;
+}
+
+.suggestion-card__title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.suggestion-card__body {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 40px;
+  font-size: 12px;
+  color: var(--text-light);
+  text-align: center;
+}
